@@ -1,0 +1,33 @@
+<?xml version="1.0" standalone="yes"?><!-- sparkle-sign-warning:
+IMPORTANT: This file was signed by Sparkle. Any modifications to this file requires re-signing this file with generate_appcast or sign_update! The signed signature will be embedded at the end of this file.
+--><rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Stenographer</title>
+        <item>
+            <title>2.154.0</title>
+            <pubDate>Tue, 29 Sep 2026 10:17:07 -0700</pubDate>
+            <sparkle:version>411</sparkle:version>
+            <sparkle:shortVersionString>2.154.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# 2.154.0
+
+First packaged release.
+
+- **Install from a signed package.** A notarized `.pkg` installer sets up
+  Stenographer without needing a source checkout. An optional component
+  installs the `claude-account` shell integration (off by default).
+- **Automatic updates.** Stenographer now checks for updates in the
+  background and offers them from a new **Check for Updates…** menu item.
+- **Smoother updates.** After installing an update, Stenographer finishes
+  its own setup automatically — no manual steps required.
+- **The command-line tool is now `snog`.** It replaces `stenographer`;
+  setup moves your status line over to it automatically.
+]]></description>
+            <enclosure url="https://github.com/agenticdevelopmentstudio/stenographer-releases/releases/download/v2.154.0-dryrun/Stenographer-2.154.0.zip" length="30215255" type="application/octet-stream" sparkle:edSignature="XmZX8ompfFSNH9xCwn1ZgMCxJVQYF9JsYJggcwT9wDrUH8L9SKwvRMrJoi7q5XN3yhSzXercGB4Hf5FbcyqRCQ=="></enclosure>
+        </item>
+    </channel>
+</rss><!-- sparkle-signatures:
+edSignature: uMHJKt72CZrMe2yShClcrIq0WMNbaSAn91NZj3W2cdpJ5lWsH3/8LA5z+w9zcgZeCed9M6Um0aWyyrnbSVKuBQ==
+length: 1909
+-->
