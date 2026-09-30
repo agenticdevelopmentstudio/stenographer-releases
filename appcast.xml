@@ -1,0 +1,37 @@
+<?xml version="1.0" standalone="yes"?><!-- sparkle-sign-warning:
+IMPORTANT: This file was signed by Sparkle. Any modifications to this file requires re-signing this file with generate_appcast or sign_update! The signed signature will be embedded at the end of this file.
+--><rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Stenographer</title>
+        <item>
+            <title>2.161.0</title>
+            <pubDate>Wed, 30 Sep 2026 12:03:37 -0700</pubDate>
+            <sparkle:version>421</sparkle:version>
+            <sparkle:shortVersionString>2.161.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# 2.161.0
+
+First packaged release.
+
+- **Install from a signed package.** A notarized `.pkg` installer sets up
+  Stenographer without needing a source checkout. An optional component
+  installs the `claude-account` shell integration (off by default).
+- **Automatic updates.** Stenographer now checks for updates in the
+  background and offers them from a new **Check for Updates…** menu item.
+- **Smoother updates.** After installing an update, Stenographer finishes
+  its own setup automatically — no manual steps required.
+- **The command-line tool is now `snog`.** It replaces `stenographer`;
+  setup moves your status line over to it automatically.
+- **Burn rate in Account Quotas.** Each account shows how fast it is using
+  its quota, accounts can be reordered, and a seal marks each quota's state.
+- **Reliable account switching.** Switching Claude accounts no longer loops
+  on password prompts, installs an expired login, or loses a renewed token.
+]]></description>
+            <enclosure url="https://github.com/agenticdevelopmentstudio/stenographer-releases/releases/download/v2.161.0/Stenographer-2.161.0.zip" length="30325559" type="application/octet-stream" sparkle:edSignature="T4ZtAK9+5SR7BXG7pvNIZTTmIw4qb4j8aytld9NL82o1EYNj4mYvfdhBdm9pv7GvgrxjmP4DnmiXEWHFhyfqBQ=="></enclosure>
+        </item>
+    </channel>
+</rss><!-- sparkle-signatures:
+edSignature: ad4hZsBc886Jl9lqK/kwOOkTC5vNhnknuSrCbJxv0I04szGWrb6BkgvdFUEDtdbPZ0O0fYY9S+XGI1RxMjEJBw==
+length: 2206
+-->
