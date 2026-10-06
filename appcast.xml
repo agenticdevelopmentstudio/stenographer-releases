@@ -1,8 +1,63 @@
-<?xml version="1.0" standalone="yes"?><!-- sparkle-sign-warning:
+<?xml version="1.0" standalone="yes"?>
+<!-- sparkle-sign-warning:
 IMPORTANT: This file was signed by Sparkle. Any modifications to this file requires re-signing this file with generate_appcast or sign_update! The signed signature will be embedded at the end of this file.
---><rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+-->
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
     <channel>
         <title>Stenographer</title>
+        <item>
+            <title>1.0.178.0</title>
+            <pubDate>Tue, 06 Oct 2026 13:39:21 -0700</pubDate>
+            <sparkle:version>461</sparkle:version>
+            <sparkle:shortVersionString>1.0.178.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# 1.0.178.0
+
+- **Stenographer 1.0.** Versions now read 1.0.x everywhere you see them —
+  the app, the installer, update notices and `steno --version`.
+- **Updating from 2.161.0: install this package by hand.** The 2.161.0
+  updater was misconfigured and cannot install updates, so **Check for
+  Updates…** will not reach this release. Download and run the installer
+  once; automatic updates work from this version on.
+- **Signed installer and automatic updates.** Stenographer ships as a signed,
+  notarized installer, checks for updates itself (**Check for Updates…** is
+  in the Stenographer menu), and can be installed with Homebrew.
+- **Setup happens in the app.** On first launch, and after every update,
+  Stenographer installs its Claude Code hooks, background service, plugin and
+  widget itself, with a progress panel. **Manage Stenographer Tools…** in the
+  status menu and the app menu turns the status line and the `steno`
+  command-line tool on or off, and repairs anything that has gone missing.
+- **Billing for your time in Xcode and other dev apps.** Time spent in the
+  developer apps you choose is recorded and billed per project alongside your
+  Claude sessions, with clients, projects, billable entries and totals in the
+  app. Idle time is cut off after 15 minutes, or a per-project limit you set.
+  Accessibility access is only requested when you turn window tracking on.
+- **The command-line tool is now `steno`.** It was `stenographer`, then
+  `snog`. The old links are removed and a status line that still uses an old
+  name moves over to `steno statusline`. Saved Claude accounts are managed
+  with `steno claude`, and `steno --version` reports the tool's own version.
+- **Your data moves with the new name.** Stenographer's data and log folders
+  are now under `com.agenticdevelopmentstudio.stenographer`; existing data is
+  moved there automatically the first time the new version starts.
+- **One-time keychain prompts for saved Claude logins.** Stenographer now
+  signs as a different app than older source builds did. The first time it
+  reads each login you saved in the login keychain ("This Mac only"), macOS
+  asks whether Stenographer may use it. Choose **Always Allow** and it will
+  not ask again. Logins stored in iCloud Keychain are not affected.
+- **AI provider keys carry over.** API keys saved by older builds are found
+  and moved automatically instead of appearing blank.
+- **Windows come back where you left them.** Window positions and the windows
+  you had open survive an update.
+- **Stopped stays stopped.** If you stopped the daemon from the menu, an
+  update no longer starts it again.
+- **Installer fixes.** Home folders with spaces in their names, `claude`
+  installed through nvm, Volta, fnm, Bun or a custom npm prefix, and a
+  system HTTP proxy no longer break setup. Hooks run with a real Python
+  rather than the Command Line Tools shim.
+]]></description>
+            <enclosure url="https://github.com/agenticdevelopmentstudio/stenographer-releases/releases/download/v1.0.178.0/Stenographer-1.0.178.0.zip" length="31830616" type="application/octet-stream" sparkle:edSignature="VkAHF5a3MuW2pTsi/zTm9omaqb4waTN1QFJ9inKWXOEHg6nyQ/bu6zo/euD217H7KdEu2/3JGM3esuZACWFeCQ=="/>
+        </item>
         <item>
             <title>2.161.0</title>
             <pubDate>Wed, 30 Sep 2026 12:03:37 -0700</pubDate>
@@ -28,10 +83,11 @@ First packaged release.
 - **Reliable account switching.** Switching Claude accounts no longer loops
   on password prompts, installs an expired login, or loses a renewed token.
 ]]></description>
-            <enclosure url="https://github.com/agenticdevelopmentstudio/stenographer-releases/releases/download/v2.161.0/Stenographer-2.161.0.zip" length="30325559" type="application/octet-stream" sparkle:edSignature="T4ZtAK9+5SR7BXG7pvNIZTTmIw4qb4j8aytld9NL82o1EYNj4mYvfdhBdm9pv7GvgrxjmP4DnmiXEWHFhyfqBQ=="></enclosure>
+            <enclosure url="https://github.com/agenticdevelopmentstudio/stenographer-releases/releases/download/v2.161.0/Stenographer-2.161.0.zip" length="30325559" type="application/octet-stream" sparkle:edSignature="T4ZtAK9+5SR7BXG7pvNIZTTmIw4qb4j8aytld9NL82o1EYNj4mYvfdhBdm9pv7GvgrxjmP4DnmiXEWHFhyfqBQ=="/>
         </item>
     </channel>
-</rss><!-- sparkle-signatures:
-edSignature: ad4hZsBc886Jl9lqK/kwOOkTC5vNhnknuSrCbJxv0I04szGWrb6BkgvdFUEDtdbPZ0O0fYY9S+XGI1RxMjEJBw==
-length: 2206
+</rss>
+<!-- sparkle-signatures:
+edSignature: Qy4lCHlIsg/JYdorelRnP7/D6LnQf+Q23ouhnMDBbLznOZA7PS5KtSuWRwOB4wp3zSsaontcBdv7YFN0O66+DQ==
+length: 5913
 -->

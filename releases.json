@@ -1,7 +1,24 @@
 {
   "schema": 1,
-  "latest": "2.161.0",
+  "latest": "1.0.178.0",
   "releases": [
+    {
+      "version": "1.0.178.0",
+      "build": 461,
+      "date": "2026-10-06T20:44:23Z",
+      "minimumSystemVersion": "26.0",
+      "notes": "notes/1.0.178.0.md",
+      "pkg": {
+        "url": "https://github.com/agenticdevelopmentstudio/stenographer-releases/releases/download/v1.0.178.0/Stenographer-1.0.178.0.pkg",
+        "size": 31628396,
+        "sha256": "f1213dccf3ef1773f2aac88369a4fe44f40fcb9d05980f211546559d0e094ee6"
+      },
+      "zip": {
+        "url": "https://github.com/agenticdevelopmentstudio/stenographer-releases/releases/download/v1.0.178.0/Stenographer-1.0.178.0.zip",
+        "size": 31830616,
+        "sha256": "8292f8aa2f0eb934317d8c9c58ee10f39a5b58c002b3910c1c248bc879437564"
+      }
+    },
     {
       "version": "2.161.0",
       "build": 421,
