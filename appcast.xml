@@ -6,6 +6,38 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Stenographer</title>
         <item>
+            <title>1.1.0</title>
+            <pubDate>Wed, 07 Oct 2026 06:09:01 -0700</pubDate>
+            <sparkle:version>464</sparkle:version>
+            <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# 1.1.0
+
+- **Simpler version numbers.** Stenographer's versions now read
+  `major.minor.patch` — this release is 1.1.0 — in the app, the installer,
+  update notices, `steno --version` and `steno health`, which now report the
+  same version.
+- **Clean upgrades over earlier copies.** The installer now removes earlier
+  Stenographer apps from Applications before installing, including copies
+  built before 1.0, so you are left with one Stenographer instead of two, or
+  one installed inside a folder. It also stops the background service and
+  menu bar app those copies started.
+- **One password prompt during setup.** Setup steps that need administrator
+  rights now share one prompt instead of asking for your password again for
+  each step.
+- **The status line turns on when none was set.** Turning on the Claude Code
+  status line no longer fails with "XPCRefusal error 1" when Claude Code had
+  no status line configured. It now fills the empty setting, and when the
+  background service turns a request down, the message says why.
+- **Your window settings carry over.** Window positions and other settings
+  from Stenographer versions before 1.0 are brought over on upgrade, even when
+  the new version has already saved some settings of its own. Settings you
+  have already changed are never overwritten.
+]]></description>
+            <enclosure url="https://github.com/agenticdevelopmentstudio/stenographer-releases/releases/download/v1.1.0/Stenographer-1.1.0.zip" length="31829979" type="application/octet-stream" sparkle:edSignature="UkTxER65g6YK/18PwgLkDxi9CkUOuQRrSgOVNxCH3Lky5cw/kA/TJkqwL+oLiU3IalQo7vWO0P8qsATb0wVODg=="/>
+        </item>
+        <item>
             <title>1.0.178.0</title>
             <pubDate>Tue, 06 Oct 2026 13:39:21 -0700</pubDate>
             <sparkle:version>461</sparkle:version>
@@ -88,6 +120,6 @@ First packaged release.
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: Qy4lCHlIsg/JYdorelRnP7/D6LnQf+Q23ouhnMDBbLznOZA7PS5KtSuWRwOB4wp3zSsaontcBdv7YFN0O66+DQ==
-length: 5913
+edSignature: n1EkkQSaNpBPMYvMBdMDNVpBYeCF1w7P6aRfPPS6cE9FAVW6Ey1IICVYWZ3863s2/CmTOSxqmW9kJDdTVkz1Ag==
+length: 8023
 -->

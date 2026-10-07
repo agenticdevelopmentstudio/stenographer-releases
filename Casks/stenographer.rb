@@ -1,8 +1,8 @@
 # Written by scripts/release.py in the Stenographer repo for each release.
 # Do not edit by hand.
 cask "stenographer" do
-  version "1.0.178.0"
-  sha256 "f1213dccf3ef1773f2aac88369a4fe44f40fcb9d05980f211546559d0e094ee6"
+  version "1.1.0"
+  sha256 "b42074d53dee727e1e366481a0bc0c48f1ca578b7de8d4ac95d6e5f713203920"
 
   url "https://github.com/agenticdevelopmentstudio/stenographer-releases/releases/download/v#{version}/Stenographer-#{version}.pkg"
   name "Stenographer"
