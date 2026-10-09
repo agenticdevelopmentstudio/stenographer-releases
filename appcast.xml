@@ -6,6 +6,47 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Stenographer</title>
         <item>
+            <title>1.2.0</title>
+            <pubDate>Fri, 09 Oct 2026 15:17:55 -0700</pubDate>
+            <sparkle:version>482</sparkle:version>
+            <sparkle:shortVersionString>1.2.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# 1.2.0
+
+Stenographer is in beta. These are the changes since 1.1.0.
+
+- **Windows reopen after an update.** Windows that were open when an update
+  restarted the app should now reopen, whichever version saved them. Before,
+  an update could leave every window closed. Automated tests cover this, but it
+  has not yet been checked through a real update.
+- **Install Updates Automatically can be turned off.** Updates install on
+  their own by default. The app menu now has an **Install Updates
+  Automatically** item next to **Check for Updates…**; uncheck it to choose
+  when updates install.
+- **The Fable gauge shows again.** The Claude Fable usage gauge had gone
+  missing from the quota row and the widget. It is drawn again, and it no
+  longer switches between two different estimates when a reading fails.
+- **Saved Claude logins stay on this Mac.** Logins are now kept only in this
+  Mac's login keychain, because a login shared through iCloud Keychain could
+  sign your other Macs out of Claude Code. Long-lived setup tokens are still
+  shared through iCloud. A login you saved only on another Mac needs a
+  `/login` once on this one. The Storage setting is gone; **Stored in** shows
+  where each credential is.
+- **Switching accounts.** The quotas window is covered with "Switching to
+  <name>…" until the switch finishes, instead of showing the old account
+  first for a while.
+- **The status line can share Claude Code's setting.** Claude Code allows only
+  one status line command. Stenographer now installs a small shared launcher
+  at `~/.claude/claudehelpers/statusline` that can run its status line
+  alongside another tool's. If the status line fails, the reason is shown in
+  **Manage Tools** and by `steno health`.
+- **A faster status line.** The status line no longer waits for usage data to
+  be recorded before it appears.
+]]></description>
+            <enclosure url="https://github.com/agenticdevelopmentstudio/stenographer-releases/releases/download/v1.2.0/Stenographer-1.2.0.zip" length="31941188" type="application/octet-stream" sparkle:edSignature="neQ4X81UwtJ9qQNeNRexCOfTFfsg0TuHwP3hs4fa1Qp3UGyIFs6vws8p2L6mNCIqqStAvQ64T5LqiuqCcmmQCA=="/>
+        </item>
+        <item>
             <title>1.1.0</title>
             <pubDate>Wed, 07 Oct 2026 06:09:01 -0700</pubDate>
             <sparkle:version>464</sparkle:version>
@@ -120,6 +161,6 @@ First packaged release.
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: n1EkkQSaNpBPMYvMBdMDNVpBYeCF1w7P6aRfPPS6cE9FAVW6Ey1IICVYWZ3863s2/CmTOSxqmW9kJDdTVkz1Ag==
-length: 8023
+edSignature: RhNwAxsaznIuTbPegS23FixbHbwwjWgHDcMM3isEM1vSbkblULkqnUUHMprNI/5M0EFSFjHMf90J96B2RHkNBg==
+length: 10666
 -->
